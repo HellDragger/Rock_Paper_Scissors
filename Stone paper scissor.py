@@ -6,7 +6,7 @@ n = int(input("How many times do you wish to play?: "))
 # List that includes rock paper scissors
 rock_paper_scissors = ["Scissors", "Paper", "Rock"]
 
-win_list = []   # list to store results of all plays 
+win_list = []   # list to store results of all plays
 for i in range(0, n):
     # the computer chooses randomly from the list(or string) using choice function
     computer_choice = random.choice(rock_paper_scissors)
@@ -52,7 +52,8 @@ for i in range(0, n):
         win_list.append("Draw")
         print("Draw!!!!")
     time.sleep(5) # Delay in execution
+#     do you wish to change condition to be added
 
 # counter to count number of wins, loses and draw respectively
-counter = Counter(win_list)
-print("The results are: ", counter)
+
+print("The results are: ", Counter(win_list))
